@@ -15,10 +15,14 @@
                 <input type="text" id="username" name="username" required placeholder="username">
             </div>
             <div class="input-container">
-                <input type="password" id="password" name ="password" required placeholder="password">
+                <input type="password" id="password" name="password" required placeholder="password">
             </div>
             <button type="button" id="login_user" name="login_user" onclick="checkLogin()">Login</button>
             <p>Or login with</p>
+            <div class="social-buttons">
+                <button type="button" onclick="loginWithFacebook()">Facebook</button>
+                <button type="button" onclick="loginWithGoogle()">Google</button>
+            </div>
             <p>No account yet? Sign up now</p>
         </form>
     </div>
@@ -37,6 +41,16 @@
                 // Display an error message or perform other actions for failed login
                 alert('Incorrect username or password. Please try again.');
             }
+        }
+
+        function loginWithFacebook() {
+            // Placeholder function for Facebook login
+            alert('Facebook login not implemented in this example.');
+        }
+
+        function loginWithGoogle() {
+            // Placeholder function for Google login
+            alert('Google login not implemented in this example.');
         }
     </script>
 
