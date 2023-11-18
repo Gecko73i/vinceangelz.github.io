@@ -1,0 +1,82 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-image: url('01 assets/01 images/01 login_background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-container {
+    background-color: #ffffff;
+    padding: 80px;
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style for the input containers */
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* Style for the icons inside the input fields */
+.input-container input[type="text"]::before,
+.input-container input[type="password"]::before {
+    content: "\f007"; /* Unicode character for user icon */
+    font-family: 'Font Awesome 5 Free'; /* Font Awesome font family */
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #555; /* Icon color */
+    font-size: 18px; /* Icon size */
+    z-index: 1;
+    pointer-events: none; /* Prevent icon from being selectable */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f0f0f0;
+}
+
+button {
+    background-color: #f1b963;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    padding: 12px 0;
+    width: 80%;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e46161;
+}
